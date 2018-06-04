@@ -1,0 +1,33 @@
+<html>
+    <head>>
+
+    </head>
+    <body>
+
+    </body>
+    <script>
+    function primeno(){
+var count=1;
+var prime = 1;
+document.write("2<br>") ;
+time=0;
+for(var a=3; count<10; a+=2)
+{ 
+	for(var b=3; b<=a**.5; b+=2)
+	{
+	time++;
+	if(a%b==0){
+        prime = 0; 
+    break;}
+	}
+	if(prime == 1){
+        document.write (a+"<br>"); 
+        count++;}
+	prime = 1;
+	}
+document.write(time+"My code run at this time<br>");
+    }
+    primeno();
+    
+    </script>
+</html>

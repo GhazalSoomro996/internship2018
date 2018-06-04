@@ -1,0 +1,22 @@
+
+.board {
+  display: flex;
+  width: 450px;
+  height: 450px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+}
+
+.square {
+  height: 150px;
+  width: 150px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+
+}
+

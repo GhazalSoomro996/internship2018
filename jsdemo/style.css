@@ -1,0 +1,20 @@
+
+  .div{
+      border: 1px solid black;
+  }
+  td {
+    width: 100px;
+    height: 100px;
+  }
+  table {
+    margin: 5px ;
+    /* border: 1px solid black; */
+  }
+  .vertical {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+  }
+  .horizontal {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  } 

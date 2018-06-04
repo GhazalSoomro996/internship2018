@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html> 
+<body> 
+       <form>
+            Firstname:- <input type="text" id="t1" name="firstname" placeholder="enter lastname"/><br><br>
+            Lastname:- <input type="text" id="t2"  name="lastname" placeholder="enter lastname"/><br><br>
+            Batch:- <input type="text" id="t3"  name="batch" placeholder="enter batch"/><br><br>
+            Department:- <input type="text" id="t4"  name="dept" placeholder="enter department"/><br><br>
+            <input type="button" onclick="formdata()" value="button"/><br><br>
+       </form>
+       <table id="myTable" border="1"> 
+           <tr>
+               <th>firstname</th>
+               <th>lastname</th>
+               <th>batch</th>
+               <th>department</th>          
+           </tr>
+         
+       </table>
+<script>
+    function formdata(){
+       var a= document.getElementById("t1").value;
+       var b= document.getElementById("t2").value;
+       var c= document.getElementById("t3").value;
+       var d= document.getElementById("t4").value;
+       var person = {
+           firstName:a,
+           lastName:b,
+           batch:c,
+           departmet:d
+        };
+             var rn=1;
+             var cn=4;
+             for(var r=0;r<parseInt(rn,10);r++) {
+              var x=document.getElementById('myTable').insertRow(r);
+                var y1=  x.insertCell(a);
+                var y2=  x.insertCell(b);
+                var y3=  x.insertCell(c);
+                var y4=  x.insertCell(d);
+     y1.innerHTML=d; 
+     y2.innerHTML=c; 
+     y3.innerHTML=b; 
+     y4.innerHTML=a; 
+    
+             }
+    }
+
+</script>
+</body> 
+</html>

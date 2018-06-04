@@ -1,0 +1,17 @@
+<!DOCTYPE html> 
+<html> 
+<body> 
+<script>
+function charcount(word, character) {
+var count = 0;
+ for (i = 0; i < word.length; i++) {
+    if (word[i] == character) {
+        count++;
+    }
+}
+document.write( character + " appears " + count + " times in " + word) ;
+}
+charcount("ghazal soomro", 'o');
+</script>
+</body> 
+</html> 

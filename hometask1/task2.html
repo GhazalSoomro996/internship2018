@@ -1,0 +1,36 @@
+
+<!DOCTYPE html> 
+<html> 
+<body> 
+
+        Enter rows:- <input id ="t1" type="number"  placeholder="enter rows"/><br><br>
+        Enter columns:- <input id ="t2"  type="number"  placeholder="enter columns"/><br><br>
+        <button onclick="myfunc()">create table</button><br><br>
+        <table id="myTable" border="1"> 
+<script>
+function myfunc ()
+{
+   rn= document.getElementById("t1").value;
+   console.log(rn);
+   cn= document.getElementById("t2").value;
+   console.log(cn);  
+ for(var r=0;r<parseInt(rn,10);r++)
+  {
+   var x=document.getElementById('myTable').insertRow(r);
+   for(var c=0;c<parseInt(cn,10);c++)  
+    {
+     var y=  x.insertCell(c);
+     y.innerHTML="Row-"+r+" Column-"+c; 
+    }
+   }
+}
+
+</script>
+
+</body> 
+</html> 
+
+
+
+
+

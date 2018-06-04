@@ -1,0 +1,22 @@
+<!DOCTYPE html> 
+<html> 
+<body> 
+        <input id ="text" type="text"  placeholder="Enter string"/><br><br>
+        <button onclick="myfunc()">click</button><br><br>
+<script>
+ 
+function myfunc() {
+var str=document.getElementById("text").value;
+var array1 = str.split(' ');
+  var newarray1 = [];  
+  for(var x = 0; x < array1.length; x++){
+      newarray1.push(array1[x].charAt(0).toUpperCase()+array1[x].slice(1));
+  }
+  document.write(str+"<br>");
+ document.write(newarray1.join(' '));
+}
+myfunc();
+
+</script>
+</body> 
+</html> 

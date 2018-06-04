@@ -1,0 +1,31 @@
+<!DOCTYPE html> 
+<html> 
+    <head>
+    </head>
+<body> 
+    <div>   
+            <h3 id="demo"></h3>
+            <p id="p1">This is a paragraph.</p> 
+            <p id="p2">This is a paragraph.</p> 
+            <p id="p3">This is a paragraph.</p> 
+    </div>
+
+<button onclick="myfunc()">Change color</button><br><br>
+<button onclick="backcolor()">Change background color</button><br><br>
+<button onclick="heading()">Add heading</button>
+
+<script>
+function myfunc(){
+    document.getElementById("p1").style.color = "blue";
+    document.getElementById("p2").style.color = "blue";
+    document.getElementById("p3").style.color = "blue";
+}
+function backcolor(){
+    document.body.style.backgroundColor = "lightblue";
+}
+function heading(){
+    document.getElementById("demo").innerHTML = "Hello World";
+}
+</script>
+</body> 
+</html> 
